@@ -1,4 +1,4 @@
-#Blockchain Developer.
+# Blockchain Developer.
 
 
-#Innovating a decentralised future.
+## Innovating a decentralised future.
