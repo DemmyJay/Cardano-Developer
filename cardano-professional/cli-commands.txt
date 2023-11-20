@@ -1,0 +1,88 @@
+-->  Creation of Payment Address Signing and Verification keys:
+   * cardano-cli address key-gen --signing-key-file addr1.skey  --verification-key-file addr1.vkey
+
+--> Creation of Staking Address Signing and Verification keys:
+   * cardano-cli stake-address key-gen --signing-key-file stake2.skey --verification-key-file stake2.vkey
+
+--> Base Address Creation command:
+   * cardano-cli address build --payment-verification-key-file addr2.vkey --stake-verification-key-file stake1.vkey --out-file base2.addr $PRETESTNET
+
+--> Checking Account Balance
+   * cardano-cli query utxo --address $(cat base1.addr) $PRETESTNET
+
+--> Draft Transaction:
+   * cardano-cli transaction build-raw \
+--alonzo-era \
+--tx-in $UTXOIN \
+--tx-out $(cat base2.addr)+5000000000 \
+--tx-out $(cat base3.addr)+5000000000 \
+--invalid-hereafter 0 \
+--fee 0 \n
+--out-file tx.draft
+
+
+--> Calculating Transaction fee:
+   * cardano-cli transaction calculate-min-fee \
+--tx-body-file tx.draft \
+--tx-in-count 1 \
+--tx-out-count 2 \
+--witness-count 1 \
+$PRETESTNET \
+--protocol-params-file protparams.json
+
+--> Finding value slot No for estimated time:
+   * cardano-cli query tip $PRETESTNET = (Latest Tip Info i.e LTI)
+   * export VALIDTILL=$(expr 6625556 - 600)
+
+--> Base Address Hash command:
+   * bech32 <<< (base Address)
+
+--> Building an Address from the PubKeyHash
+   * bech32 addr <<< $(2 digit prefix + PubKeyHash)
+
+--> Building an unsigned  utxo (Build):
+   * cardano-cli Transaction build (--testnet era) --tx-in (utxo-transaction-ID + # + TxIndex) --out $(cat receiver's address)+Amount  --change-address $(receiver's-address) $TESTNET --out-file (TxName.raw)
+
+--> Building an Unsigned UTXO (Build-raw)
+   * cardano-cli transaction build-raw \
+--alonzo-era \
+--tx-in $UTXOIN \
+--tx-out $(cat base2.addr)+5000000000 \
+--tx-out $(cat base3.addr)+$BALANCE \
+--invalid-hereafter $VALIDTILL \
+--fee $FEE \
+--out-file tx.raw 
+
+--> signing created transaction
+   * cardano-cli transaction sign \
+--tx-body-file tx.raw \
+--signing-key-file addr1.skey \
+$PRETESTNET \
+--out-file tx.signed
+
+--> Submitting A Transaction
+   * cardano-cli transaction submit \
+--tx-file tx.signed \
+$PRETESTNET
+
+--> Verification-Key Hash
+  *cardano-cli address key-hash --payment-verification-key-file addr.vkey
+
+--> checking transaction hash
+  * cardano-cli transaction txid --tx-file tx.signed
+
+--> checking protocol parameter information 
+   * cardano-cli query protocol-parameters --out-file protparams.json $PRETESTNET
+
+--> Viewing Transaction Details:
+   * cardano-cli transaction view --tx-body-file FT.signed
+
+--> Checking Balance for Base address(testnet):
+   * cardano-cli query utxo --address $(cat "base address") $PRETESTNET
+
+
+
+
+
+
+  

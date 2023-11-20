@@ -1,0 +1,58 @@
+Libraries to be familiar with:
+
+
+("Control." Libraries):
+  Control.Monad
+  Data.Monoid
+  Data.Map as Map
+  Control.Monad.State 
+  Data.Char
+  Data.Either
+  Data.Text
+  System.Environment 
+  Data.Semigroup
+  System.IO
+  Control.Concurrent
+  Control.Monad
+  System.Console.ANSI
+  System.IO
+
+
+Know Language Pragma declarations
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

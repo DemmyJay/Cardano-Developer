@@ -1,0 +1,43 @@
+hey folks! here are the project submission requirements. if there is any queries, ask me on the
+Telegram or email me at irfan@emurgo.io
+
+DEADLINE
+  - the project should be submitted on or before the deadline. the deadline is 3 weeks from the
+    session in which project requirements were announced.
+
+  - if, for some valid reason, you need an extension to the deadline, please contact Meenakshi or
+    Bharat with an explanation of your situation.
+
+AVAILABILITY
+  - the project should be publicly available in GitHub (or GitLab or SourceHut or any other hosting
+    service of your choice) from where it should be available for download. mailed submissions would
+    not be accepted. we would share a form in a portal to submit links to the repositories.
+
+  - the project should be a cabal project so that the reviewer doesn't need to sort any dependency
+    issues if they decide to run it on their system. instructions related on how to build a cabal
+    project would be discussed in the class. also, refer to cabal docs for the same.
+
+COMPLEXITY
+  - the project should be of similar level of features/complexity compared to the tic-tac-toe
+    example which was discussed and shared in the class.
+
+  - the bottom limit refers to features in the application and not the features of Haskell used. to
+    do anything useful, you'd have to write recursive functions or use higher-order functions,
+    declare data types, use the IO monad. features like transformers are optional and could be
+    omitted. but usage of transformers would make it easier to perform many operations and earn you
+    bonus points!
+
+  - the bottom limit of features/complexity is just to exclude the absolutely trivial submissions.
+    if you're concerned your submission might be considered trivial, please ask me about it.
+
+PRESENTATION
+  - the project should be presented in the class with a demonstration of the working program and a
+    high-level walk-through of the code.
+
+  - if, for some valid reason, you couldn't present your project, you'd have to submit a video
+    demonstration on what the code does and how it works.
+
+  - again, if for some valid reason, you couldn't make a video demonstration, you'd have to submit a
+    very detailed write-up on what the code does and how it works.
+
+  - submission of a non-documented code with no presentation/video/write-up would not be accepted.

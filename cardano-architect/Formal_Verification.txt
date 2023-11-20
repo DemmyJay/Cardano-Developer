@@ -1,0 +1,66 @@
+Formal Verification:
+
+In the context of software development, formal verification is a technique used to rigorously prove or verify the correctness of a software system or component mathematically. It involves applying formal methods, which are based on mathematical logic and reasoning, to analyze and verify that a software system meets its intended specifications.
+
+Formal verification aims to provide strong guarantees about the behavior and correctness of software, eliminating the need for extensive testing or relying solely on empirical evidence. It involves creating a formal model of the software system, usually expressed in a formal specification language or a formal logic, and using automated tools or manual proof techniques to reason about the model and verify its properties.
+
+
+The process of formal verification typically involves the following steps:
+
+
+Specification: Clearly define the desired behavior, properties, or requirements of the software system using a formal specification language. This specification serves as the basis for the verification process.
+
+Model creation: Create a formal model of the software system based on the specification. This model captures the structure, behavior, and constraints of the system in a mathematical representation.
+
+Verification conditions: Identify the properties or properties that need to be verified. These can include safety properties (e.g., "the system will never enter an invalid state") and liveness properties (e.g., "the system will eventually reach a desired state").
+
+Proof or analysis: Use automated tools or manual proof techniques to reason about the formal model and verify the specified properties. Automated tools can perform model checking, symbolic execution, or theorem proving to check the correctness of the model. Manual proof techniques involve constructing mathematical proofs to demonstrate the properties of the model.
+
+Validation: Validate the results of the formal verification process. This may involve reviewing and validating the formal model, checking the soundness of the proof, and ensuring that the verified properties align with the intended behavior of the software system.
+
+
+Formal verification offers several advantages, including:
+
+Rigorous analysis: Formal verification provides a rigorous and systematic approach to analyze and verify the correctness of software systems.
+
+Increased reliability: By mathematically proving the correctness of a software system, formal verification can significantly increase its reliability and reduce the risk of critical errors.
+
+Bug detection: Formal verification can help detect subtle bugs, design flaws, and corner cases that may be missed during testing or code review.
+
+Specification refinement: The process of formal verification often reveals ambiguities or inconsistencies in the system specification, allowing for refinement and improvement of the initial requirements.
+
+Verification of critical systems: Formal verification is especially useful for safety-critical systems, where correctness and reliability are paramount, such as aerospace, medical, or automotive systems.
+
+
+It's worth noting that formal verification is a resource-intensive process and may be challenging for complex systems. It is often used in combination with other verification and validation techniques to provide comprehensive assurance of software correctness.
+
+Formal Verification also involves the following properties:
+
+Soundness:
+
+Completeness:
+
+Safety:
+
+Liveness:
+
+First Order Logic:
+
+This the mathematical way of thinking of some statements using:
+
+* Formulas: Which basically are logically statements 
+
+* Quantifiers.
+  Ax.Q(x) | Ex.Q(x)
+* Modus ponens rule for inference of new formulas.
+
+Questions:
+
+1. In quantifiers, does this mean that if the 1st statement is true then the other statement is automatically true?
+
+
+
+
+
+
+

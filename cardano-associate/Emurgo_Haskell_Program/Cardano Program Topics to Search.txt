@@ -1,0 +1,94 @@
+Research:
+Understand symetric ciphers
+what is a sybil attack
+Read Ethereum's whitepaper
+Read Cardano's documentations
+Understand Bridges
+what is raspberry pi
+What is Hyperledger
+What is Ouroboros
+Understand Ricardian Contract
+Hydra blockchain
+The Dao Hack
+How is quantium computing a threat to cryptography
+Cardano stake pool
+AskToken
+Hashing Algorithms(Learn cryptography)
+Difficulty Target
+Understand Scalability factors in Blockchain/
+Structure of a block in blockchain/
+Understand the Hard Fork Conbinator/
+proof of proof of stake
+TCPIP
+Understand The Merkle Tree
+the two way peg
+What is the Howey test (Security tokens, Utility)
+Understand mutual bonds, Bond etc.
+Arweave
+Understand QR codes and how they work.
+Understand a Turning machine.
+Cardano DID
+getting a software engineering job.
+getting a Blockchain Dev job.
+Public verifiable secrete sharing(PVSS)
+Understand Verifiable Random function (VRF)
+What is a state machine?
+What is a virtual state machine?
+What is an Isomorphic state machine?
+what is state Grinding
+What is HTTP Protocol
+What is File transfer protocol
+Discentralised Hash Table
+Programming Languages concepts
+Understand Plutus core
+Understand different types of smart contracts
+A.I Integrated blockchain.
+
+
+Note:
+In Asymmetric crptohgraphy, the private/public key pair are used both for encrypting and decrypting data but in distinct use cases.
+
+=>For verification and validation of a sender:
+
+ The Private Key is used for verification and validation of the sender by signing (encrypting) the message using the senders private key which is then decrypted using the shared public key.
+
+=>For sending hidden messages:
+
+ The public key is used for sending hidden messages by encrypting the message with the receiver's public key which can only be decrypted by the receiver with his/her private key.
+
+Secure Hashing Algoritm:
+SHA-3 is an improvement of Keccak256
+
+
+
+
+Questions:
+=>In a merkle tree, is it the validated transaction that are being summarised into the merkle root?
+=>Do Miners validate transactions and share the validated transaction between other miners which they then add to their respective blocks or do they validate the blocks and then share the validated blocks amongst other miners or validators?
+
+
+
+
+=>Bitcoin Design:
+Quantum entanglement to blockchain
+Bitcoin White paper
+Merkle Tree function in block validation
+How Transactions are being validated in proof of work
+CNFT and their Projects
+
+
+=>Consensus Algorithms:
+BFT network & PBFT network
+Hash fuctions vs Hash Algorithms
+Proof of elapse time
+Haskel Vs Plutus
+
+
+Mitesh/Vignesh: Cryptography Distributed computing
+How to get the documentations for the era of Cardano
+Slot time Vs Block time
+Understand Pledge
+Random Number Generator not good
+Is it validator or skakepools that are selected randomly
+PVSS
+Ask about Ouroboros classic
