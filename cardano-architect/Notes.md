@@ -10,7 +10,7 @@
 
 - Plutarch - Very low level, 4-6x more efficient than Plutus, type-safe, not very abstract.
 
-- Plu-ts - Typescript based language, 25% more efficient than Plutus.
+- Plu-ts - Typescript-based language, 25% more efficient than Plutus.
 
 - Aiken - Rust based incomplete.
 
@@ -42,7 +42,7 @@ Marginal optimization for validator script function:
 - Use case Analysis.
 
 
-- 21st Jan 2023
+21st Jan 2023
 Merkle trees
 : Merkle trees allow you to commit large a amount of information on the blockchain with.
 - On Chain Meta-Data using Reference NFTs. (21st Jan 2023)
