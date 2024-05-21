@@ -12,7 +12,7 @@
 
 - Plu-ts - Typescript-based language, 25% more efficient than Plutus.
 
-- Aiken - Rust based incomplete.
+- Aiken - Rust-based incomplete.
 
 ### Off-chain Transaction Building Languages
 
@@ -26,7 +26,7 @@
 
 - Atlas: Genius Yield's Open-source PAB - The most robust Haskell solution.  
 
-- CTL - My personal favorite, PureScript based, painful to setup, very good readability / writability, and very robust.
+- CTL - My personal favourite, PureScript based, painful to set up, very good readability/writability, and very robust.
 
 https://github.com/Plutonomicon/cardano-transaction-lib/tree/develop/examples
 
@@ -40,6 +40,7 @@ Marginal optimization for validator script function:
 - Property-based testing.
 - Benchmarking.
 - Use case Analysis.
+
 
 
 21st Jan 2023
@@ -65,10 +66,11 @@ Minting tokens with Plutus scripts.
   - [Folding/Traversing over a list](https://mlabs.slab.com/public/posts/on-chain-association-list-with-constant-time-insert-removal-sh8z2xzy)
   The folding validator works by accumulating the values of all the UTxOs using some accumulator function.
 
+
 Note
-: The folding is done on-chain, each transaction takes the fold utxo (containing the datum with the accumulator/integer datum in this case)  locked at the fold validator and spends that utxo, reading over linked list nodes and adding their value to the datum of the fold UTxO.
-: The idea of the transaction token pattern is that validation logic occurs at the transaction level instead of the UTxO level. Normally, when you use a normal spending validator, if you unlock 3 utxos at the smart contract address, the script will run 3 times, once for each input.
-: A minting policy operates at the transaction level, in the sense that all the utxos can be validated by executing the minting policy once, instead of 3 times. Then for each utxo being unlocked, instead of running a ton of validation logic, all it does is check that a minting policy is executed successfully.
+:The folding is done on-chain, each transaction takes the fold utxo (containing the datum with the accumulator/integer datum in this case)  locked at the fold validator and spends that utxo, reading over linked list nodes and adding their value to the datum of the fold UTxO.
+:The idea of the transaction token pattern is that validation logic occurs at the transaction level instead of the UTxO level. Normally, when you use a normal spending validator, if you unlock 3 utxos at the smart contract address, the script will run 3 times, once for each input.
+:A minting policy operates at the transaction level, in the sense that all the utxos can be validated by executing the minting policy once, instead of 3 times. Then for each utxo being unlocked, instead of running a ton of validation logic, all it does is check that a minting policy is executed successfully.
 
   **Use case of The Transaction Token pattern:**
     Auction
@@ -158,13 +160,13 @@ Solutions for Cardano:
     Onchain Staking: Plutarch lsV1
     Offchain: Lucid
 
-- 25th of March
+25th of March
 
-- 26th of March
+26th of March
   - setup for Plutarch
 
-2nd of April
 
+2nd of April
 - Learning Plutarch:
 
   Setting up the Plutarch and Lucid environment.
@@ -190,7 +192,7 @@ Continuation of CIP68
 7th of May
 
 CIP 57: Plutus Contract Blueprint.
- CIP very briefly. CIP-57 is a "Plutus Contract Blueprint". Meaning, you can take any Plutus script (that supports it) and get a blueprint of the contract. Meaning, it will tell you all the endpoints and constructors (options) you can interact with that script. So all the context of the script.
+CIP very briefly. CIP-57 is a "Plutus Contract Blueprint". Meaning, you can take any Plutus script (that supports it) and get a blueprint of the contract. Meaning, it will tell you all the endpoints and constructors (options) you can interact with that script. So all the context of the script.
 
 13th of May
 
