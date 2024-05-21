@@ -57,7 +57,7 @@ Lucid.
 - Solving the concurrency issue using.
 - Plutus Design Patterns.
 
-- 4th Feb 2023
+4th Feb 2023
 Minting tokens with Plutus scripts.
 
 - 11th Feb 2023
