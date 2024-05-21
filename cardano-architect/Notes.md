@@ -49,7 +49,7 @@ Merkle trees
 - On Chain Meta-Data using Reference NFTs. (21st Jan 2023)
 
 
-- 28/1/23 & 29/1/23
+28/1/23 & 29/1/23
 Lucid.
 : Install NPX using NPM package manager and integrate with Blockfrost.
   Lucid transaction building.
@@ -60,10 +60,10 @@ Lucid.
 4th Feb 2023
 Minting tokens with Plutus scripts.
 
-- 11th Feb 2023
-  - [Transaction Token Patten: Using minting policies to spend a transaction rather than standard validators where it makes sense.](https://github.com/Plutonomicon/plutonomicon/blob/main/transaction-token-pattern.md)
-  - [Solving the concurrency issues using on-chain linked list UTxOs.](https://mlabs.slab.com/public/posts/on-chain-association-list-with-constant-time-insert-removal-sh8z2xzy)
-  - [Folding/Traversing over a list](https://mlabs.slab.com/public/posts/on-chain-association-list-with-constant-time-insert-removal-sh8z2xzy)
+1th Feb 2023
+ - [Transaction Token Patten: Using minting policies to spend a transaction rather than standard validators where it makes sense.](https://github.com/Plutonomicon/plutonomicon/blob/main/transaction-token-pattern.md)
+ - [Solving the concurrency issues using on-chain linked list UTxOs.](https://mlabs.slab.com/public/posts/on-chain-association-list-with-constant-time-insert-removal-sh8z2xzy)
+ - [Folding/Traversing over a list](https://mlabs.slab.com/public/posts/on-chain-association-list-with-constant-time-insert-removal-sh8z2xzy)
   The folding validator works by accumulating the values of all the UTxOs using some accumulator function.
 
 
@@ -78,7 +78,7 @@ Note
   **Terms To Search**
     Forward minting policy: This is when a minting policy forwards its logic to a validator.
 
-- 12th Feb 2023
+12th Feb 2023
  Middleware solutions for Cardano:
   - PAB (out of development): A centralized off-chain transaction builder that runs DBsync as an interface to the Blockchain
   - Frontend transaction building provider for Lucid: Blockfrost, Emulator provider, Kupmios.
@@ -87,11 +87,11 @@ Note
   - Scrolls:
   - Cardano Graph QL: This a backend infrastructure that offers direct integration with TypeScript and a Docker container that can be run easily
 
-- 5th March 2023
+5th March 2023
   Improve your Haskell:
-  :https://kowainik.github.io/posts/haskell-mini-patterns.html
-  :https://www.fpcomplete.com/haskell/syllabus/
-  :https://www.fpcomplete.com/blog/2017/06/readert-design-pattern/
+  https://kowainik.github.io/posts/haskell-mini-patterns.html
+  https://www.fpcomplete.com/haskell/syllabus/
+  https://www.fpcomplete.com/blog/2017/06/readert-design-pattern/
   
 Solutions for Cardano:
 : Latex: Documentation creator
